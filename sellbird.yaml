@@ -2,7 +2,7 @@ persona:
   name: "Alex"
   company: "Your Company"
   role: "Business Development"
-  email: "alex@yourcompany.com"
+  email: "nallasivan30@gmail.com"
   linkedin: "linkedin.com/in/alex-yourcompany"
   tone: "professional, consultative, confident"
 
@@ -47,7 +47,7 @@ icp:
 channels:
   email:
     enabled: true
-    provider: "gmail"          # gmail (recommended) | microsoft | smtp | instantly
+    provider: "smtp"          # gmail (recommended) | microsoft | smtp | instantly
     max_daily_sends: 50
     require_approval: true      # native: review in Outbox; Instantly: sending held
     # link_domains: ["mainsite.com"]   # your own sites besides the sending
@@ -165,3 +165,8 @@ compliance:
 #     company: "{company}"
 #     website: "{website}"
 #     email: "{email}"
+
+# AI thinking engine: claude, codex, or gemini
+brain:
+  provider: gemini
+  model: gemini-3.5-flash
